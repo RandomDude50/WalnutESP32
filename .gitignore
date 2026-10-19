@@ -1,0 +1,7 @@
+.pio/
+include/secrets.h
+node_modules/
+dist/
+.env
+mosquitto/passwd
+.env.local

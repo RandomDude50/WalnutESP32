@@ -1,0 +1,11 @@
+# Regole "pattern": valgono per ogni utente; %c = client id. Il firmware usa come
+# client id il proprio deviceId, quindi ogni ESP32 puo' toccare solo i PROPRI topic.
+pattern write iot/%c/telemetry
+pattern write iot/%c/status
+pattern write iot/%c/config/state
+pattern write iot/%c/ota/status
+pattern read  iot/%c/config/set
+pattern read  iot/%c/cmd/#
+
+user backend
+topic readwrite iot/#
