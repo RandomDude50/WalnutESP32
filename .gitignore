@@ -1,7 +1,25 @@
+# PlatformIO
 .pio/
-include/secrets.h
+**/.pio/
+
+# Dependencies
 node_modules/
+**/node_modules/
+
+# Build artifacts
 dist/
+**/dist/
+*.bin
+
+# Environment & credentials
 .env
-mosquitto/passwd
 .env.local
+.env.*
+!*.example
+include/secrets.h
+mosquitto/passwd
+
+# Python & OS
+__pycache__/
+*.pyc
+.DS_Store
